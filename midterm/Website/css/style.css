@@ -1,0 +1,86 @@
+header {
+    background-color: #FFFFFF;
+    margin-top: auto;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    color: #878787;
+    margin: 10px;
+    width: 100%;
+    z-index: 1;
+    /*places text in front of other elements so it can click*/
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #878787;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #FFFFFF;
+    text-align: right;
+    bottom: 0px;
+    position: fixed;
+    margin-bottom: auto;
+    font-size: 10px;
+    color: #878787;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    margin: 10px;
+}
+
+.cover {
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+    /* for ie8 or earlier*/
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+input.burger-checkbox,
+label.burger {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    nav.top-nav {
+        display: none;
+    }
+    label.burger {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    label.burger:before {
+        content: '\2630';
+    }
+    input.burger-checkbox:checked ~ nav.top-nav {
+        display: block;
+        width: 100%;
+        background-color: white;
+        font-size: 13px;
+    }
+}
+
+.column1of2 {
+    float: left;
+    width: 300px;
+    height=100px;
+    margin-top: 100px;
+}
+
+.column2of2 {
+    float: right;
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+}
