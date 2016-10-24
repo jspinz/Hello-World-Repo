@@ -3,8 +3,8 @@ body {
     font-family: futura-pt, sans-serif;
     font-style: normal;
     font-weight: 300;
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -47,7 +47,7 @@ footer {
 .container {
     width: 95%;
     margin-top: 10px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
 .home-bg {
@@ -89,7 +89,7 @@ ul li a {
 
 ul li a:hover {
     background: #FFFFFF;
-    color:black;
+    color: black;
 }
 
 li:hover ul {
@@ -131,12 +131,10 @@ h1 {
 }
 
 .placeCol1 {
-    
     margin-top: 100px;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
-    
 }
 
 .image-container {
@@ -151,7 +149,6 @@ img {
     nav.top-nav {
         text-align: center;
     }
-   
     /*label.burger {
         display: inline-block;
         position: absolute;
@@ -172,4 +169,74 @@ img {
         background-color: white;
         font-size: 13px;
     */
+}
+
+.NA {
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+    /* for IE8 or earlier^ */
+}
+
+.NA:hover {
+    filter: url(#pictureFilter);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* for IE8 or earlier^ */
+    fill: #306BFF;
+}
+
+.SA {
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+    /* for IE8 or earlier^ */
+}
+
+.SA:hover {
+    filter: url(#pictureFilter);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* for IE8 or earlier^ */
+    fill: #5239E8;
+}
+
+.EU {
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+    /* for IE8 or earlier^ */
+}
+
+.EU:hover {
+    filter: url(#pictureFilter);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* for IE8 or earlier^ */
+    fill: #F82BBC;
+}
+
+.ASIA {
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+    /* for IE8 or earlier^ */
+}
+
+.ASIA:hover {
+    filter: url(#pictureFilter);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* for IE8 or earlier^ */
+    fill: #FF165B;
+}
+
+.AUS {
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+    /* for IE8 or earlier^ */
+}
+
+.AUS:hover {
+    filter: url(#pictureFilter);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* for IE8 or earlier^ */
+    fill: #FF4B42;
 }
