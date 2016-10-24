@@ -1,5 +1,6 @@
-    body {
+body {
     margin: 0px;
+    
 }
 
 header {
@@ -14,6 +15,7 @@ header {
     z-index: 100;
     padding: 20px;
     /*places text in front of other elements so it can click*/
+    display: inline-block;
 }
 
 a:link,
@@ -23,6 +25,9 @@ a:active {
     color: #878787;
     text-decoration: none;
 }
+
+
+/*Dropdown button*/
 
 footer {
     background-color: #FFFFFF;
@@ -40,47 +45,109 @@ footer {
     margin: 10px;
 }
 
+.home-bg {
+    opacity: 00;
+    filter: alpha(opacity=80);
+    /* for ie8 or earlier*/
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: fixed;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    display: inline-block;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    color: #878787;
+    z-index: 100;
+}
+
+li ul {
+    display: none;
+}
+
+ul li a {
+    display: block;
+    background: #FFFFFF;
+    padding: 0px 5px 0px 1px;
+    text-decoration: none;
+    color: #878787;
+}
+
+ul li a:hover {
+    background: #FFFFFF;
+}
+
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+li:hover a {
+    background: #FFFFFF;
+}
+
+li:hover li a:hover {
+    background: #FFFFFF;
+}
+
+#drop-nav li ul li {
+    border-top: 0px;
+}
+
 .cover {
     opacity: 0.80;
     filter: alpha(opacity=80);
     /* for ie8 or earlier*/
     padding-top: 50px;
     padding-bottom: 10px;
+  
 }
+
+
+/*.cover{color:#ace63c;}
+.cover:hover{filter: url(#blur-NA);}
 
 input.burger-checkbox,
 label.burger {
     display: none;
+}*/
+
+h1{
+    text-align: center;
 }
 
-
-
-.column1of2 {
-    float: left;
-    width: 500px;
-    height: 300px;
+.placeCol1 {
     margin-top: 100px;
-    margin-left: 20px;
-}
-.column2of2 {
-    float: right;
-    width: 400px;
-    height: 400px;
-    margin-left:0px;
-    margin-top: 100px;
-    margin-right: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
     
 }
+
+.image-container {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
 @media screen and (max-width: 400px) {
     nav.top-nav {
-        
-        
-        text-align:center;
-        
+        text-align: center;
     }
-    
-    .container{
-        margin:0px;
+    .container {
+        margin: 0px;
     }
     /*label.burger {
         display: inline-block;
@@ -102,20 +169,5 @@ label.burger {
         background-color: white;
         font-size: 13px;
     */
-    
-    .column1of2{
-        margin-left:0px;
-        position: fixed;
-        width:auto;
-        
-    
-    }
-    
-    .column2of2 {
-        margin-top:400px;
-        position:fixed;
-        width:auto;
-        height:auto;
-        margin-left:0px;
-    }
+   
 }

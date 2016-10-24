@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 432 249.8" style="enable-background:new 0 0 432 249.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+</style>
+<title>world_map</title>
+<g id="North_America">
+	<path class="st0" d="M31.4,23l-27,23l-3,9l41-9l-6,39l34,36l18-7l23-6c6-1-14-11-12-14l13-25c1-2,10-2,10-2s6,3,13-5s16-16,27-20
+		s17-15,18-14l14-19L31.4,23z"/>
+</g>
+<g id="South_America">
+	<polygon class="st0" points="130,213 106,213 98,159 81,131 86,115 115,106 153,138 136,179 	"/>
+</g>
+<g id="Europe">
+	<polygon class="st0" points="239,62 221,76 201,71 179,76 169,32 202,10 240,9 	"/>
+</g>
+<g id="Asia">
+	<polygon class="st0" points="337.9,145 296,121.2 276.6,100.3 251.3,110.3 242.5,100.3 234.7,82.5 224,74.5 238.6,61.6 242.5,9 
+		397.3,25.9 355.4,102.3 408.9,143 	"/>
+</g>
+<g id="Australia">
+	<polygon class="st0" points="421,205 373,199 358,182 337,189 334,150 391,145 394,179 414,177 	"/>
+</g>
+<image style="overflow:visible;enable-background:new    ;" width="1600" height="925" id="World_Map" xlink:href="world_map.jpg"  transform="matrix(0.27 0 0 0.2701 0 0)">
+</image>
+</svg>
