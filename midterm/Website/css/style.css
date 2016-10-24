@@ -1,6 +1,10 @@
 body {
     margin: 0px;
-    
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background-color:black;
+    color:white;
 }
 
 header {
@@ -42,7 +46,8 @@ footer {
 
 .container {
     width: 95%;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom:5px;
 }
 
 .home-bg {
@@ -84,6 +89,7 @@ ul li a {
 
 ul li a:hover {
     background: #FFFFFF;
+    color:black;
 }
 
 li:hover ul {
@@ -109,7 +115,6 @@ li:hover li a:hover {
     /* for ie8 or earlier*/
     padding-top: 50px;
     padding-bottom: 10px;
-  
 }
 
 
@@ -121,11 +126,12 @@ label.burger {
     display: none;
 }*/
 
-h1{
+h1 {
     text-align: center;
 }
 
 .placeCol1 {
+    
     margin-top: 100px;
     margin-left: 30px;
     margin-right: 30px;
@@ -139,16 +145,13 @@ h1{
 
 img {
     max-width: 100%;
-    
 }
 
 @media screen and (max-width: 400px) {
     nav.top-nav {
         text-align: center;
     }
-    .container {
-        margin: 0px;
-    }
+   
     /*label.burger {
         display: inline-block;
         position: absolute;
@@ -169,5 +172,4 @@ img {
         background-color: white;
         font-size: 13px;
     */
-   
 }
