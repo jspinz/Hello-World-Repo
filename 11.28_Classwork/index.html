@@ -23,10 +23,14 @@
     <style>
         img {
             padding: 10px;
-            width:100%;
+            width: 100%;
         }
-        header{
-            text-align:center;
+        
+        header {
+            text-align: center;
+        }
+        h1{
+            text-align: center;
         }
     </style>
 
@@ -79,11 +83,50 @@
 
         </div>
     </div>
+    
+    <button data-toggle="modal" data-target="#myModal">Click Me</button>
+    <!-- modal-->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dailog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <h1>Hello Modal!</h1>
+                <img id="modal-img" src="">
+            
+            </div>
+            
+        </div>
+    
+    
+    
+    </div>
 
-
+    <!-- load jquery -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    
+    <script>
+    
+//        $('#mymodal').on('show.bs.modal',function(e){
+//            console.log(e);
+//        });
+        $('img').on('click',function(e){
+            //get img src
+            
+            //jquery .attr()
+            console.log($(e.target).attr('src'));
+            
+            //pure js way
+            console.log(e.target.getAttribute('src'));
+            
+            // set src
+            var newSrc=$(e.target).attr('src')
+            $('#modal-img').attr('src',newSrc);
+            
+            //togle the modal
+            $('#myModal').modal('toggle');
+        });
+    </script>
 
 </body>
 
