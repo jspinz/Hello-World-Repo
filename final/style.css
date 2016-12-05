@@ -1,0 +1,292 @@
+/*
+.background {
+    margin-top: 0px;
+    max-height: 1000px;
+    width:100%;
+    
+}
+
+.logo {
+    top: 0px;
+    margin-left: 20px;
+    z-index: 100000000000000000000000;
+}
+*/
+
+
+/*
+input.burger-checkbox:checked ~ nav.top-nav {
+    display: block;
+    width: 20%;
+    background-color: black;
+    font-size: 13px;
+    position:fixed;
+    
+}
+*/
+
+
+/*
+a:link,
+a:visited,
+a:hover,
+ {
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    color:#878787;
+    text-decoration: none;
+}
+*/
+
+
+/*
+https://codepen.io/g13nn/pen/eHGEF
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+*/
+
+.logo {
+    z-index: 1;
+    padding: 20px;
+}
+
+
+/* Navigation Menu - Background */
+
+.navigation {
+    /* critical sizing and position styles */
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    /* non-critical appearance styles */
+    list-style: none;
+    background: #111;
+}
+
+
+/* Navigation Menu - List items */
+
+.nav-item {
+    /* non-critical appearance styles */
+    width: 200px;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+    /* non-critical appearance styles */
+    display: block;
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+    color: #878787;
+}
+
+.nav-item a:active {
+    color: #878787;
+}
+
+
+/* Site Wrapper - Everything that isn't navigation */
+
+.site-wrap {
+    /* Critical position and size styles */
+    min-height: 100%;
+    min-width: 100%;
+    background-color: white;
+    /* Needs a background or else the nav will show through */
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    /* non-critical apperance styles */
+    /*  padding: 4em;*/
+    /*  background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);*/
+    background-size: 200%;
+}
+
+
+/* Nav Trigger */
+
+.nav-trigger {
+    /* critical styles - hide the checkbox input */
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+    /* critical positioning styles */
+    position: fixed;
+    right: 25px;
+    top: 30px;
+/*    padding-right: 10px;*/
+
+    z-index: 3;
+    /* non-critical apperance styles */
+    height: 5%;
+    width:5%;
+    cursor: pointer;
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='white'/><rect y='24' width='30' height='6' fill='white'/><rect y='12' width='30' height='6' fill='white'/></svg>");
+    background-size: contain;
+}
+
+
+/* Make the Magic Happen */
+
+.nav-trigger + label,
+.site-wrap {
+    transition: left 0.2s;
+}
+
+.nav-trigger + label {
+    right: 15px;
+    transition: right 0.2s;
+}
+
+.nav-trigger:checked + label {
+    right: 215px;
+}
+
+.nav-trigger:checked ~ .navigation {
+    border: 4px solid red;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: -200px;
+    box-shadow: black;
+}
+
+body {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+    overflow-x: hidden;
+}
+
+
+/* Additional non-critical styles */
+
+
+/*
+h1,
+h3,
+p {
+    max-width: 600px;
+    margin: 0 auto 1em;
+}
+*/
+
+code {
+    padding: 2px;
+    background: #ddd;
+}
+
+
+/* Micro reset */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: europa;
+    font-style: normal;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    
+    filter: url(#pictureFilter);
+    opacity:0.9;
+    filter: blur(1px);
+}
+
+.head-text {
+    padding-top: 14%;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    margin-top: 20%;
+}
+
+p {
+    word-wrap: break-word;
+    margin-top:10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+}
+
+.social {
+    background: #878787;
+    text-align: center;
+    padding: 5px;
+}
+
+.social a {
+    border: 7px solid #878787;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    padding: 2%;
+    width: 100%;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+.placeCol1 {
+    margin-top: 35%;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
