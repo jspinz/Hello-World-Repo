@@ -1,3 +1,6 @@
+
+
+
 /*
 .background {
     margin-top: 0px;
@@ -60,9 +63,15 @@ https://codepen.io/g13nn/pen/eHGEF
 }
 */
 
+@font-face{
+    font-family: europa, sans-serif;
+    src: url('font/Europa-Light.otf') format("opentype");
+}
+
 .logo {
     z-index: 1;
     padding: 20px;
+    position:fixed;
 }
 
 
@@ -290,3 +299,9 @@ p {
     margin-right: 30px;
     text-align: center;
 }
+
+.img{
+    width:100%;
+    padding:10px;
+}
+

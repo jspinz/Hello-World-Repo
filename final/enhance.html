@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Music DJ</title>
 
+
+    <!-- bootstrap testing -->
+    <meta charset="UTF-8">
+
+
+    <!-- IE Edge Meta Tag -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+
     <style>
         main.flex-container {
             display: flex;
@@ -60,57 +84,85 @@
 
         <div class="container" style>
             <h1> </h1>
-            
+
         </div>
-        
+
+
         <div class="placeCol1">
-         <h1>Looking to spice up your event?</h1>
-            <p>Check out our many services below to make your event successful. <br>The possibilities are limitless and can be customized to work with your theme and budget<br> *Don't see the service you're looking for here? Not a worry, please give us a call and we will confirm if we have it as it may not be listed here</p>
-        <main class="flex-container">
-           
-            <div class="image-container">
-                <img src="img/dancefloor.jpg" height=200px width=300px>
-                <p>Dancefloor Lighting</p>
-            </div>
-            
-            <div class="image-container">
-                <img src="img/event_design.jpg" height=200px width=300px style=filter:grayscale(0.8)>
-                <p>Event Design</p>
-            </div>
-            
-            <div class="image-container">
-                <img src="img/multimedia.jpg" height=200px width=300px>
-                
-                <p>Multi-Media Screens</p>
-            </div>
-            
-            <div class="image-container">
-                <img src="img/uplighting1.jpg" height=200px width=300px>
-                <p>Uplighting</p>
-            </div>
-            
-            <div class="image-container">
-                <img src="img/custom_audio.jpg" height=200px width=300px>
-                <p>Custom Audio</p>
-            </div>
-            
-            <div class="image-container">
-                <img src="img/lighting.jpg" height=200px width=300px style=filter:grayscale(0.7)>
-                <p>Lighting Specialty</p>
-            </div>
-            
-            
-              <div class="image-container">
-                <img src="img/photobooth.jpg" height=200px width=300px>
-                <p>Photo Booth</p>
-            </div>
-        </main>
+            <h1>Looking to spice up your event?</h1>
+            <p>Check out our many services below to make your event successful.
+                <br>The possibilities are limitless and can be customized to work with your theme and budget
+                <br> *Don't see the service you're looking for here? Not a worry, please give us a call and we will confirm if we have it as it may not be listed here</p>
+            <main class="flex-container">
 
-    </div>
+                <div class="image-container">
+                    <img src="img/dancefloor.jpg" height=200px width=300px>
+                    <p>Dancefloor Lighting</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/event_design.jpg" height=200px width=300px style=filter:grayscale(0.8)>
+                    <p>Event Design</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/multimedia.jpg" height=200px width=300px>
+
+                    <p>Multi-Media Screens</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/uplighting1.jpg" height=200px width=300px>
+                    <p>Uplighting</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/custom_audio.jpg" height=200px width=300px>
+                    <p>Custom Audio</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/lighting.jpg" height=200px width=300px style=filter:grayscale(0.7)>
+                    <p>Lighting Specialty</p>
+                </div>
 
 
+                <div class="image-container">
+                    <img src="img/photobooth.jpg" height=200px width=300px>
+                    <p>Photo Booth</p>
+                </div>
+            </main>
 
-        
+        </div>
+<!-- fix col for md and lg screens because when shrinking they stick together -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/dancefloor.jpg" height=200px width=300px>
+                    <p>Dancefloor Lighting</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/event_design.jpg" height=200px width=300px style=filter:grayscale(0.8)>
+                    <p>Event Design</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/multimedia.jpg" height=200px width=300px>
+
+                    <p>Multi-Media Screens</p>
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
 
         <!--        http://xomisse.com/blog/add-social-media-icons-to-your-navigation-bar/-->
         <div class="social">
@@ -122,27 +174,29 @@
 
             <a href="#" target="blank" title="Vimeo"><img src="img/vimeo.png"></a>
 
-            <a href="#" target="blank" title="Email"><img src="imgemail.png"></a>
+            <a href="#" target="blank" title="Email"><img src="img/email.png"></a>
 
 
 
         </div>
-        
-        
+
+
 
         <div class="footer">
             <img src="footer.png">
 
         </div>
 
+
     </div>
 
 
+    <!-- load jquery -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 
-
-
-
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 
