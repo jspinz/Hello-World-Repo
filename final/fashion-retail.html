@@ -6,30 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Music DJ</title>
 
-<!--
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
-    <script src="js/app.js"></script>
--->
-
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
     <script type="text/javascript">
         $(window).load(function () {
             $("#loader").fadeOut("slow");
         })
     </script>
 
-
-
 </head>
 
 
-<body ng-app="app">
-
-
+<body>
 
     <div id="loader"></div>
+
+
+
     <ul class="navigation">
         <li class="nav-item">
             <a href="#"></a>
@@ -62,18 +57,17 @@
             <a href="index.html"><img src="img/logo%20final.png" width=18%></a>
         </div>
 
-        <div class="background"><img src="img/IMG_9013.jpg" width=100%;>
+        <div class="background"><img src="img/fashion.jpg" width=100%;>
         </div>
 
         <div class="head-text" style="text-align:center"><img src="img/text-home.png" width=60% height=100%></div>
 
 
         <div class="container">
-            <h1>who we are</h1>
-            <p class="home-page">Happy Music DJ, formerly known as P & M Music, Inc. has been serving the best music entertainment in Chinatown, NY for over 30 years. The manager, Charlie Wong with his wife Alice Wu have been running their record store during the day, and providing DJ entertainment at night ranging from weddings, birthday parties, social events, charities, organizations, and more. With over 30 years of experience, it is guaranteed that your event will have top of the line technology to provide the best quality of music.</p>
-            <p class="home-page">
-                Since our creation, we have evolved into an entertainment production company serving the tri-state area specializing in thousands of events. Each event and occassion is different so we invite you to give us a call to get started.</p>
+            <h1>fashion | retail</h1>
+            <p class="home-page">With our vast inventory in audio, visual, and lighting, we are able to accomodate events from fashion to retail events.</p>
             <br>
+
         </div>
         <!--        http://xomisse.com/blog/add-social-media-icons-to-your-navigation-bar/-->
         <div class="social">
@@ -96,7 +90,6 @@
                 <p class="foot-text">
                     <a href="index.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="events.html">Events We Do</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <!--                    <a href="photobooth.html">Photobooth</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
                     <a href="enhance.html">Enhance Your Event</a>
 
                     <br>
@@ -109,11 +102,9 @@
             </div>
 
         </div>
-    
-    
+
     </div>
-
-
+    <div ng-view></div>
 
 
 
