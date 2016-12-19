@@ -189,7 +189,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-family: europa;
+    font-family: europa, sans-serif!important;
     font-style: normal;
     margin: 0;
 }
@@ -355,4 +355,8 @@ a:active {
 }
 */
 
-
+/* for custom height/width for responsive pics using bootstrap - LOAD CUSTOM CSS AFTER BOOTSTRAP CSS TO OVERRIDE */
+.img-responsive{
+    height:250px;
+    width:359px;
+}
